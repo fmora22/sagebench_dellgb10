@@ -1,4 +1,7 @@
-# Test Example Module
+"""Test Example Module
+
+Tests for the example module.
+"""
 
 import sys
 import os
@@ -8,12 +11,14 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 
 from src.example import hello_world
 
+
 def test_hello_world():
     """Test the hello_world function."""
     result = hello_world()
     assert result == "Hello, World!"
-    print("✓ test_hello_world passed")
+
 
 if __name__ == "__main__":
+    # Basic test runner for manual execution
     test_hello_world()
-    print("\nAll tests passed!")
+    print("All tests passed!")

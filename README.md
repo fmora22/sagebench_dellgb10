@@ -25,7 +25,39 @@ sagebench_dellgb10/
 
 ## Getting Started
 
-[Add project-specific instructions here]
+### Installation
+
+For development, install the package in editable mode:
+
+```bash
+pip install -e .
+```
+
+To install with development dependencies (including pytest):
+
+```bash
+pip install -e ".[dev]"
+```
+
+### Running Tests
+
+Run tests using pytest:
+
+```bash
+pytest
+```
+
+Or run the test file directly:
+
+```bash
+python tests/test_example.py
+```
+
+### Running the Example
+
+```bash
+python src/example.py
+```
 
 ## Contributing
 

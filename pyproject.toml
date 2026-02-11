@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sagebench_dellgb10"
+version = "1.0.0"
+description = "A well-organized project structure demonstration"
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = ["pytest>=6.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
